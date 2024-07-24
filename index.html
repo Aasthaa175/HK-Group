@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project-1</title>
+<style>
+  /* Define custom property */
+  :root{
+    --background-color:burlywood;
+  }
+
+
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+  }
+
+  html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+  }
+
+  .header{
+    width: 100%;
+    height: 100vh;
+    background: url("https://www.architectureartdesigns.com/wp-content/uploads/2013/07/1325.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+  }
+
+  .logo{
+    font-size: 3rem;
+    font-weight: 700;
+    color: burlywood;
+  }
+
+  .btn{
+    margin-left: 125rem;
+    cursor: pointer;
+    color: burlywood;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 500;
+    border: 0.3rem solid burlywood;
+    border-radius: 7px;
+    background: none;
+    transition: all linear 0.5s;
+  }
+
+  .btn:hover{
+    background: bisque;
+    color: darkolivegreen;
+    transform: translate(0px, -3px);
+  }
+  
+
+  .logo span{
+    color: burlywood;
+  }
+  .section {
+    padding: 200px 0;
+    text-align: center;
+  }
+  .section h1 {
+    margin: 0;
+    font-size: 8rem;
+    color: burlywood;
+    letter-spacing: center;
+  }
+  .section p {
+    margin: 0;
+    font-size: 5rem;
+    color: darksalmon;
+  }
+
+  .count .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr)) ;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .count .box-container .box{
+    background-color: burlywood;
+    border-radius: .5rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+
+  }
+
+  .count .box-container .box:hover{
+    background: var(--bg);
+    color: var(--white);
+    transform: translate(0px, -3px);
+  }
+ .count .box-container .box h2 {
+    font-size: 2rem;
+    color: rgb(114, 0, 23);
+    margin-bottom: .5rem;
+  }
+
+
+
+  
+ 
+</style>
+</head>
+<body>
+  <div class="header" id="home">
+    <nav id="navbar">
+        <a href="#home" class="logo">HK<span>.</span></a>
+    </nav>
+
+    <nav id="navbar">
+      <button class="btn">Sign In</button>
+    </nav>
+    
+  <div class="section">
+    <h1>Hari Krishna Group</h1>
+    <p>One-Stop All-Solution</p>
+    
+  </div>
+  
+
+  <!-- counter section starts-->
+  <section class="count">
+
+  <div class="box-container">
+    <div class="box">
+        <div class="content">
+        <h2>Tiles</h2>
+        </div>
+      </div>
+
+    <div class="box">
+      <div class="content">
+        <h2>Furniture</h2>
+      </div>
+    </div>
+
+
+  
+    <div class="box">
+      <div class="content">
+        <h2>Laminates</h2>
+      </div>
+    </div>
+    <div class="box">
+      <div class="content">
+        <h2>Paints</h2>
+      </div>
+    </div>
+    <div class="box">
+      <div class="content">
+        <h2>Sanitary</h2>
+      </div>
+    </div>
+  </div>
+
+  </section>
+  <!-- counter section ends-->
+</body>
+</html>
